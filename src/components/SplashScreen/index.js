@@ -22,7 +22,7 @@ export const SplashScreen = () => {
   }
 
   return (
-    <div className="absolute w-full h-full bg-slate-900 grid">
+    <div className="absolute w-full h-full bg-slate-900 grid z-10">
       <svg
         className="m-auto"
         width="735"
