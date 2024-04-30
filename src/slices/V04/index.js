@@ -20,6 +20,7 @@ const V04 = ({ slice }) => {
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
+      id="marketing-efforts"
       className={` grid
                   grid-flow-dense
                   grid-cols-8

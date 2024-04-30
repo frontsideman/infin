@@ -13,6 +13,7 @@ const V03 = ({ slice }) => {
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
+      id="capitalism"
       className=" grid
                   grid-flow-dense
                   grid-cols-8

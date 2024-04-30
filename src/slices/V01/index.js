@@ -26,6 +26,7 @@ const V01 = ({ slice }) => {
         isImageLeft && 'flex-row-reverse'
       )}
       style={bgColor}
+      id={slice.variation === 'default' ? 'for-business' : 'for-individuals'}
     >
       <div className={clsx('flex flex-col w-2/3', isImageLeft && 'pl-8')}>
         <div className="font-bold text-sm">{slice.primary.page_number}</div>
