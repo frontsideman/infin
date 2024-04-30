@@ -1,0 +1,21 @@
+.title h2 {
+  font-size: 62px;
+}
+
+.title strong {
+  color: #ffcd00;
+}
+
+.points > p {
+  font-size: 14px;
+}
+
+.points > p:not(:first-of-type):before {
+  content: '';
+  display: block;
+  height: 1px;
+  background-color: rgb(37, 37, 37);
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}

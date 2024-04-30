@@ -1,0 +1,55 @@
+.logo-item {
+  fill-opacity: 0;
+}
+
+#logoThe {
+  animation-duration: 400ms;
+  animation-delay: 500ms;
+  animation-name: show;
+  animation-fill-mode: both;
+}
+
+#logoI {
+  animation-duration: 300ms;
+  animation-delay: 900ms;
+  animation-name: show;
+  animation-fill-mode: both;
+}
+
+#logoIn {
+  animation-duration: 300ms;
+  animation-delay: 1200ms;
+  animation-name: show;
+  animation-fill-mode: both;
+}
+
+#logoInf {
+  animation-duration: 300ms;
+  animation-delay: 1500ms;
+  animation-name: show;
+  animation-fill-mode: both;
+}
+
+#logoInfi {
+  animation-duration: 300ms;
+  animation-delay: 1800ms;
+  animation-name: show;
+  animation-fill-mode: both;
+}
+
+#logoInfin {
+  animation-duration: 300ms;
+  animation-delay: 2100ms;
+  animation-name: show;
+  animation-fill-mode: both;
+}
+
+@keyframes show {
+  from {
+    fill-opacity: 0;
+  }
+
+  to {
+    fill-opacity: 1;
+  }
+}

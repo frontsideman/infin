@@ -1,0 +1,98 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"points": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Minim anim mollit qui aute eu."
+						}
+					}
+				]
+			},
+			"block_name": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Amet anim magna ad cupidatat aute minim consequat consequat occaecat cillum anim voluptate dolor anim. Quis consequat culpa culpa tempor nulla elit officia laborum consectetur."
+						}
+					}
+				]
+			},
+			"page_number": {
+				"__TYPE__": "FieldContent",
+				"value": "knowledge",
+				"type": "Text"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"message",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Exercitation laborum dolor do nulla anim consectetur ad laboris velit exercitation laborum velit incididunt irure. Ipsum tempor consectetur ipsum adipisicing occaecat. Nisi aliqua sunt magna deserunt culpa ex labore voluptate eiusmod culpa consectetur reprehenderit et qui sit."
+									}
+								}
+							]
+						}
+					],
+					[
+						"user_title",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "studied",
+							"type": "Text"
+						}
+					],
+					[
+						"user_name",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "half",
+							"type": "Text"
+						}
+					],
+					[
+						"avatar",
+						{
+							"origin": {
+								"id": "main",
+								"url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5",
+								"width": 5848,
+								"height": 3899
+							},
+							"url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5",
+							"width": 5848,
+							"height": 3899,
+							"edit": {
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								},
+								"background": "transparent"
+							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					]
+				]
+			}
+		]
+	}
+]

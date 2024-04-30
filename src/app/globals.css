@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  background-color: #c1c1c1;
+}
+
+.custom-cursor:hover {
+  cursor: url('../../public/cursor.svg'), default;
+}

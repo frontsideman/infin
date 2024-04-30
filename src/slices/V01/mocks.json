@@ -1,0 +1,367 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "The Insufficient Status Quo for Businesses",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "It’s hard to evaluate individual contributions in a team environment because some employees are more visible. Similarly, some employees may take more credit than others. Meanwhile, the ones who are actually driving the company’s success may be flying completely under the radar. And then, employers have to decide on bonuses and promotions based on limited information and often with resentment from the employees. It’s frustrating.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"key_1": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "For employers"
+			},
+			"key_2": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Use The INFIN’s\ninsights to"
+			},
+			"points": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Determine the individual contribution and ROI of every employee",
+							"spans": []
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Identify underperformers and better utilize employee strengths",
+							"spans": []
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Improve team dynamics andcompany culture",
+							"spans": []
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Invest with better alignment of ROI,labor spend, and business objectives",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"page_number": {
+				"__TYPE__": "FieldContent",
+				"value": "travel",
+				"type": "Text"
+			},
+			"picture": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa",
+					"width": 2747,
+					"height": 4120
+				},
+				"url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa",
+				"width": 2747,
+				"height": 4120,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"button_text": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Anim adipisicing exercitation incididunt consequat aute. Exercitation veniam irure labore duis irure deserunt Lorem reprehenderit ea aute sunt in ipsum sit nostrud. Amet irure id aute aliquip consequat ipsum ex commodo consequat."
+						}
+					}
+				]
+			},
+			"button_link": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://google.com"
+				}
+			},
+			"background": {
+				"__TYPE__": "FieldContent",
+				"value": "White",
+				"type": "Select"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"key_1",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "For employers",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"value_1",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "It’s hard to evaluate individual contributions in a team environment because some employees are more visible. Similarly, some employees may take more credit than others. Meanwhile, the ones who are actually driving the company’s success may be flying completely under the radar. And then, employers have to decide on bonuses and promotions based on limited information and often with resentment from the employees. It’s frustrating.",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"key_1",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Use The INFIN’s\ninsights to",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"value_1",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Determine the individual contribution  and ROI of every employee",
+										"spans": []
+									},
+									"direction": "ltr"
+								},
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Identify underperformers and better utilize employee strengths",
+										"spans": []
+									},
+									"direction": "ltr"
+								},
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Improve team dynamics and company culture",
+										"spans": []
+									},
+									"direction": "ltr"
+								},
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Invest with better alignment of ROI, labor spend, and business objectives",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					]
+				]
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "imageLeft",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Dolor consectetur ad incididunt proident dolore dolore mollit."
+						}
+					}
+				]
+			},
+			"key_1": {
+				"__TYPE__": "FieldContent",
+				"value": "telephone",
+				"type": "Text"
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Officia ea fugiat dolore aliquip esse amet exercitation anim quis Lorem commodo. In ex in sint aliqua irure occaecat voluptate sint eu nulla sunt elit do. Duis irure aute nisi duis anim eu id quis."
+						}
+					}
+				]
+			},
+			"key_2": {
+				"__TYPE__": "FieldContent",
+				"value": "oil",
+				"type": "Text"
+			},
+			"points": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Minim ad quis duis ex officia mollit Lorem ipsum commodo sit."
+						}
+					}
+				]
+			},
+			"page_number": {
+				"__TYPE__": "FieldContent",
+				"value": "cage",
+				"type": "Text"
+			},
+			"picture": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9",
+					"width": 4752,
+					"height": 3168
+				},
+				"url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9",
+				"width": 4752,
+				"height": 3168,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"button_text": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Ullamco labore aliquip elit et laboris ullamco pariatur in aliquip dolor quis. Est irure amet quis excepteur id ad sunt commodo tempor eiusmod aliqua ullamco. Voluptate dolore mollit eiusmod."
+						}
+					}
+				]
+			},
+			"button_link": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "https://prismic.io"
+				}
+			},
+			"background": {
+				"__TYPE__": "FieldContent",
+				"value": "White",
+				"type": "Select"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"key_1",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Fugiat sint reprehenderit commodo magna ex. Eiusmod amet non ea proident. Veniam consectetur dolor aliqua est nostrud ut eu sint officia consequat ut id laborum."
+									}
+								}
+							]
+						}
+					],
+					[
+						"value_1",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Dolor incididunt excepteur quis. Quis excepteur aute culpa anim et sit officia do pariatur occaecat Lorem quis commodo nulla. Sint ipsum ipsum nostrud reprehenderit duis enim aliqua et do deserunt dolor aliquip ea."
+									}
+								}
+							]
+						}
+					]
+				]
+			}
+		]
+	}
+]
