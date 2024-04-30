@@ -27,7 +27,7 @@ export const Splash = () => {
   return (
     <div className="absolute w-full h-full bg-slate-900 grid z-10">
       <svg
-        className="m-auto"
+        className="m-auto w-full md:w-auto px-4"
         width="735"
         height="130"
         viewBox="0 0 735 130"

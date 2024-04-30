@@ -41,14 +41,15 @@ const V01 = ({ slice }) => {
                 isImageLeft ? 'bg-custom-gray-d7' : 'bg-custom-gray-e8'
               }`}
             />
-            <div className="md:pr-14 pt-7 pb-12 flex flex-row last-of-type:pb-8">
+            <div className="md:pr-14 pt-7 pb-12 flex flex-col md:flex-row last-of-type:pb-8">
               <div className="text-custom-dark opacity-40 md:w-1/6 pr-3">
                 <Text field={item.key_1} className="text-xs font-light mt-1" />
               </div>
               <div className="md:w-5/6">
                 <div
                   className={clsx({
-                    'grid grid-cols-2 gap-x-4 text-sm': item.value_1.length > 2,
+                    'md:grid grid-cols-2 gap-x-4 text-sm':
+                      item.value_1.length > 2,
                     'text-xl': item.value_1.length <= 2,
                   })}
                 >

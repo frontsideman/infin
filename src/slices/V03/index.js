@@ -13,7 +13,7 @@ const V03 = ({ slice }) => {
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
       id="capitalism"
-      className=" grid
+      className="md:grid
                   grid-flow-dense
                   grid-cols-8
                   grid-rows-[40px_repeat(5,1fr)]

@@ -32,7 +32,7 @@ const Footer = async ({ slice }) => {
       data-slice-variation={slice.variation}
       className="pt-12 pb-6"
     >
-      <div className="flex flex-col md:flex-row gap-2 justify-between mb-32">
+      <div className="flex flex-col md:flex-row gap-2 justify-between mb-32 px-6 md:px-0">
         <div className="md:w-1/4">
           <Text
             field={slice.primary.text}
@@ -121,15 +121,17 @@ const Footer = async ({ slice }) => {
         </div>
       </div>
 
-      <PrismicNextImage field={slice.primary.footer_logo} alt="" />
-      <div className="flex md:-mt-3 text-custom-gray-dark font-thin">
-        <div className="mr-2">
-          <PrismicNextImage field={slice.primary.copyright_logo} alt="" />
+      <footer className="px-4">
+        <PrismicNextImage field={slice.primary.footer_logo} alt="" />
+        <div className="flex mt-2 md:-mt-3 text-custom-gray-dark font-thin">
+          <div className="mr-2">
+            <PrismicNextImage field={slice.primary.copyright_logo} alt="" />
+          </div>
+          <div className="no-underline">
+            <PrismicRichText field={slice.primary.copyright} />
+          </div>
         </div>
-        <div className="no-underline">
-          <PrismicRichText field={slice.primary.copyright} />
-        </div>
-      </div>
+      </footer>
     </section>
   );
 };
