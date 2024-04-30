@@ -4,13 +4,7 @@ import dynamic from "next/dynamic";
 
 export const components = {
   footer: dynamic(() => import("./Footer")),
-  hero: dynamic(() => import("./Hero")),
-  image: dynamic(() => import("./Image")),
-  image_cards: dynamic(() => import("./ImageCards")),
-  quote: dynamic(() => import("./Quote")),
   reason: dynamic(() => import("./Reason")),
-  text: dynamic(() => import("./Text")),
-  text_with_image: dynamic(() => import("./TextWithImage")),
   v01: dynamic(() => import("./V01")),
   v03: dynamic(() => import("./V03")),
   v04: dynamic(() => import("./V04")),

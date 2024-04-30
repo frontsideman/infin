@@ -12,7 +12,11 @@ export async function RootHeader() {
   const homepage = await client.getSingle('home');
 
   return (
-    <Bounded as="header" yPadding="sm">
+    <Bounded
+      as="header"
+      yPadding="sm1-"
+      className="sticky top-0 z-10 bg-custom-gray-light pb-2 pt-8"
+    >
       <div className="flex flex-wrap items-start justify-between leading-none">
         <div className="w-1/3">
           <PrismicNextLink

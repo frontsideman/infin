@@ -13,7 +13,7 @@ export const Splash = () => {
         .querySelector('body')
         .classList.remove('overflow-hidden', 'fixed', 'w-screen', 'h-screen');
     };
-    const timerId = setTimeout(timerCallback, 2500);
+    const timerId = setTimeout(timerCallback, 2400);
 
     return () => {
       clearInterval(timerId);
@@ -25,7 +25,7 @@ export const Splash = () => {
   }
 
   return (
-    <div className="absolute w-full h-full bg-slate-900 grid z-10">
+    <div className="absolute w-full h-full bg-slate-900 grid z-40">
       <svg
         className="m-auto w-full md:w-auto px-4"
         width="735"
