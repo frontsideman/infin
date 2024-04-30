@@ -1,8 +1,7 @@
 import clsx from 'clsx';
-import { PrismicRichText } from '@/components/PrismicRichText';
 import { PrismicNextImage } from '@prismicio/next';
 import { Button } from '@/components/Button';
-import styles from './styles.module.css';
+import { Text } from '@/components/Text';
 
 /**
  * @typedef {import("@prismicio/client").Content.V01Slice} V01Slice
@@ -11,10 +10,10 @@ import styles from './styles.module.css';
  */
 const V01 = ({ slice }) => {
   const bgColorOptions = {
-    Grey: '#e8e8e8',
-    White: '#ffffff',
+    Grey: 'bg-custom-gray-e8',
+    White: 'bg-white',
   };
-  const bgColor = { backgroundColor: bgColorOptions[slice.primary.background] };
+  const bgClass = bgColorOptions[slice.primary.background];
   const isImageLeft = slice.variation === 'imageLeft';
 
   return (
@@ -23,35 +22,37 @@ const V01 = ({ slice }) => {
       data-slice-variation={slice.variation}
       className={clsx(
         'flex rounded-2xl px-8 py-8 mb-4 shadow-md',
-        isImageLeft && 'flex-row-reverse'
+        isImageLeft && 'flex-row-reverse',
+        bgClass
       )}
-      style={bgColor}
       id={slice.variation === 'default' ? 'for-business' : 'for-individuals'}
     >
       <div className={clsx('flex flex-col w-2/3', isImageLeft && 'pl-8')}>
-        <div className="font-bold text-sm">{slice.primary.page_number}</div>
-        <div className="pr-7 py-7 w-4/5 text-6xl font-bold">
-          <PrismicRichText field={slice.primary.title} />
+        <div className="font-bold text-sm text-author-red">
+          {slice.primary.page_number}
+        </div>
+        <div className="pr-7 py-7 w-4/5 text-6xl font-normal">
+          <Text field={slice.primary.title} />
         </div>
         {slice.items.map((item) => (
           <div key={JSON.stringify(item)} className="">
             <div
-              className="h-px"
-              style={{ backgroundColor: isImageLeft ? '#d7d7d7' : '#ececec' }}
+              className={`h-px ${
+                isImageLeft ? 'bg-custom-gray-d7' : 'bg-custom-gray-e8'
+              }`}
             />
             <div className="pr-14 pt-7 pb-12 flex flex-row last-of-type:pb-8">
-              <div className="text-slate-400 w-1/6 text-xs pr-3">
-                <PrismicRichText field={item.key_1} />
+              <div className="text-custom-dark opacity-40 w-1/6 pr-3">
+                <Text field={item.key_1} className="text-xs font-light mt-1" />
               </div>
               <div className="w-5/6">
                 <div
                   className={clsx({
-                    [`grid grid-cols-2 gap-x-4 text-sm ${styles['mb-nested-10']}`]:
-                      item.value_1.length > 2,
+                    'grid grid-cols-2 gap-x-4 text-sm': item.value_1.length > 2,
                     'text-xl': item.value_1.length <= 2,
                   })}
                 >
-                  <PrismicRichText field={item.value_1} />
+                  <Text field={item.value_1} className="font-light mb-3" />
                 </div>
               </div>
             </div>
@@ -70,9 +71,8 @@ const V01 = ({ slice }) => {
             linkField={slice.primary.button_link}
             className={clsx({
               'bg-black text-white': isImageLeft,
-              'bg-yellow-500': !isImageLeft,
+              'bg-custom-yellow': !isImageLeft,
             })}
-            labelClassName="font-bold"
           />
         </div>
       </div>

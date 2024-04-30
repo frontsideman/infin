@@ -1,19 +1,10 @@
-.title > h2 {
-  font-size: 120px;
-  line-height: 100px;
-  text-transform: uppercase;
-}
-
 .custom-bg {
-  background-image: url('../../../public/plus-top-left.svg'),
-    url('../../../public/plus-top-right.svg'),
-    url('../../../public/plus-bottom-right.svg'),
-    url('../../../public/plus-bottom-left.svg');
+  background-image: url('/plus-top-left.svg'), url('/plus-top-right.svg'),
+    url('/plus-bottom-right.svg'), url('/plus-bottom-left.svg');
   background-position:
     32px 32px,
     calc(100% - 32px) 32px,
     calc(100% - 32px) calc(100% - 32px),
     32px calc(100% - 32px);
   background-repeat: no-repeat;
-  background-color: #ffcd00;
 }

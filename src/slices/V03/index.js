@@ -1,6 +1,5 @@
-import { PrismicRichText } from '@/components/PrismicRichText';
 import { PrismicNextImage } from '@prismicio/next';
-
+import { Text } from '@/components/Text';
 import styles from './styles.module.css';
 
 /**
@@ -23,30 +22,35 @@ const V03 = ({ slice }) => {
                   mb-4
                   rounded-2xl
                   shadow-md
-                  bg-slate-950
-                  text-white"
+                  text-white
+                  bg-custom-dark"
     >
       <div className="col-[1_/_9] row-[1_/_2] font-bold text-sm">
         {slice.primary.page_number}
       </div>
-      <div className={`col-[1_/_5] row-[2_/_4] pr-2 ${styles.title}`}>
-        <PrismicRichText field={slice.primary.block_name} />
+      <div className={`col-[1_/_5] row-[2_/_5] pr-4 ${styles.title}`}>
+        <Text
+          field={slice.primary.block_name}
+          className="font-normal leading-tight"
+        />
       </div>
       <div
-        className={`col-[1_/_5] row-[4_/_7] w-1/2 pr-2 text-slate-400 ${styles.points}`}
+        className={`col-[1_/_5] row-[5_/_7] w-1/2 pr-1 text-custom-gray-dark ${styles.points}`}
       >
-        <PrismicRichText field={slice.primary.points} />
+        <Text field={slice.primary.points} className="font-light" />
       </div>
 
       <div className="col-[5_/_9] row-[2_/_7]">
         {slice.items.map((item, index) => (
-          <div key={index} className="mb-6">
-            <PrismicRichText field={item.message} />
-            <div className="flex">
+          <div key={index} className="mb-10">
+            <Text field={item.message} className="text-xl font-light" />
+            <div className="flex items-center mt-4">
               <PrismicNextImage field={item.avatar} alt="" />
               <div className="flex flex-col ml-2">
                 <p className="font-bold text-sm">{item.user_name}</p>
-                <p className="text-xs text-slate-400">{item.user_title}</p>
+                <p className="text-xs font-light text-custom-gray-dark">
+                  {item.user_title}
+                </p>
               </div>
             </div>
           </div>

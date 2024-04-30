@@ -1,6 +1,6 @@
-import { PrismicRichText } from '@/components/PrismicRichText';
 import { PrismicNextImage } from '@prismicio/next';
 import { Button } from '@/components/Button';
+import { Text } from '@/components/Text';
 import styles from './styles.module.css';
 
 /**
@@ -30,6 +30,7 @@ const V04 = ({ slice }) => {
                   mb-4
                   rounded-2xl
                   shadow-md
+                  bg-custom-yellow
                   ${styles['custom-bg']}`}
     >
       <div className="col-[2_/_8] row-[1_/_2] text-center font-bold text-sm">
@@ -38,15 +39,19 @@ const V04 = ({ slice }) => {
       <div
         className={`m-auto col-[2_/_8] row-[2_/_6] text-center ${styles.title}`}
       >
-        <div className="text-sm"></div>
-        <PrismicRichText field={slice.primary.question} />
-        <PrismicRichText field={slice.primary.title} />
+        <Text
+          field={slice.primary.question}
+          className="mb-4 text-sm font-light"
+        />
+        <Text
+          field={slice.primary.title}
+          className="mb-6 uppercase text-8xl font-light leading-none"
+        />
         <div className="text-center">
           <Button
             textField={slice.primary.button}
             linkField={slice.primary.link}
             className="bg-white inline-block px-10"
-            labelClassName="font-bold"
           />
         </div>
       </div>

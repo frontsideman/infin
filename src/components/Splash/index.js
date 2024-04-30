@@ -3,12 +3,15 @@
 import React, { useEffect, useState } from 'react';
 import './styles.css';
 
-export const SplashScreen = () => {
+export const Splash = () => {
   const [isShowing, setIsShowing] = useState(true);
 
   useEffect(() => {
     const timerCallback = () => {
       setIsShowing(false);
+      document
+        .querySelector('body')
+        .classList.remove('overflow-hidden', 'fixed', 'w-screen', 'h-screen');
     };
     const timerId = setTimeout(timerCallback, 2500);
 

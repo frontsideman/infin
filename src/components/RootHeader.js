@@ -13,8 +13,8 @@ export async function RootHeader() {
 
   return (
     <Bounded as="header" yPadding="sm">
-      <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-3 leading-none">
-        <div className="w-1/12">
+      <div className="flex flex-wrap items-start justify-between leading-none">
+        <div className="w-1/3">
           <PrismicNextLink
             href="/"
             className="text-xl font-semibold tracking-tight"
@@ -22,14 +22,14 @@ export async function RootHeader() {
             <PrismicNextImage field={settings.data.logo} />
           </PrismicNextLink>
         </div>
-        <nav>
-          <ul className="flex flex-wrap gap-6 md:gap-10">
+        <nav className="self-start">
+          <ul className="flex flex-col">
             {navigation.data?.links.map((item) => (
               <li
                 key={prismic.asText(item.label)}
                 className="font-semibold tracking-tight text-slate-800"
               >
-                <a href={item.link.url}>
+                <a href={item.link.url} className="text-sm font-light">
                   <PrismicText field={item.label} />
                 </a>
               </li>
@@ -39,7 +39,7 @@ export async function RootHeader() {
         <Button
           linkField={homepage.data.contact_button[0].link}
           textField={homepage.data.contact_button[0].label}
-          className="border border-slate-400"
+          className="border border-custom-gray-dark self-start"
         />
       </div>
     </Bounded>

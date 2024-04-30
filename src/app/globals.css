@@ -8,5 +8,6 @@ html {
 }
 
 .custom-cursor:hover {
-  cursor: url('../../public/cursor.svg'), default;
+  cursor: url('/cursor.svg'), default;
+  position: relative;
 }
