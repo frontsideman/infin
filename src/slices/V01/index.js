@@ -21,13 +21,13 @@ const V01 = ({ slice }) => {
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
       className={clsx(
-        'flex rounded-2xl px-8 py-8 mb-4 shadow-md',
+        'flex flex-col md:flex-row rounded-2xl px-8 py-8 mb-4 shadow-md',
         isImageLeft && 'flex-row-reverse',
         bgClass
       )}
       id={slice.variation === 'default' ? 'for-business' : 'for-individuals'}
     >
-      <div className={clsx('flex flex-col w-2/3', isImageLeft && 'pl-8')}>
+      <div className={clsx('flex flex-col md:w-2/3', isImageLeft && 'pl-8')}>
         <div className="font-bold text-sm text-author-red">
           {slice.primary.page_number}
         </div>
@@ -41,11 +41,11 @@ const V01 = ({ slice }) => {
                 isImageLeft ? 'bg-custom-gray-d7' : 'bg-custom-gray-e8'
               }`}
             />
-            <div className="pr-14 pt-7 pb-12 flex flex-row last-of-type:pb-8">
-              <div className="text-custom-dark opacity-40 w-1/6 pr-3">
+            <div className="md:pr-14 pt-7 pb-12 flex flex-row last-of-type:pb-8">
+              <div className="text-custom-dark opacity-40 md:w-1/6 pr-3">
                 <Text field={item.key_1} className="text-xs font-light mt-1" />
               </div>
-              <div className="w-5/6">
+              <div className="md:w-5/6">
                 <div
                   className={clsx({
                     'grid grid-cols-2 gap-x-4 text-sm': item.value_1.length > 2,
@@ -59,7 +59,7 @@ const V01 = ({ slice }) => {
           </div>
         ))}
       </div>
-      <div className="flex-row w-1/3 relative">
+      <div className="flex-row md:w-1/3 relative">
         <PrismicNextImage
           field={slice.primary.picture}
           alt=""
