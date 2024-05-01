@@ -1,21 +1,14 @@
-import { PrismicText } from '@prismicio/react';
 import { PrismicNextLink, PrismicNextImage } from '@prismicio/next';
-import { createClient } from '@/prismicio';
-import * as prismic from '@prismicio/client';
 import { Button } from '@/components/Button';
 import { Bounded } from '@/components/Bounded';
+import { Nav } from '@/components/Nav';
 
-export async function RootHeader() {
-  const client = createClient();
-  const settings = await client.getSingle('settings');
-  const navigation = await client.getSingle('navigation');
-  const homepage = await client.getSingle('home');
-
+export function RootHeader({ settings, navigation, homepage }) {
   return (
     <Bounded
       as="header"
-      yPadding="sm1-"
-      className="sticky top-0 z-10 bg-custom-gray-light pb-2 pt-8"
+      yPadding="sm1-" // leave wrong value
+      className="sticky top-0 z-10 bg-custom-gray-light pb-2 pt-8 md:-mx-1"
     >
       <div className="flex flex-wrap items-start justify-between leading-none">
         <div className="w-1/3">
@@ -26,20 +19,7 @@ export async function RootHeader() {
             <PrismicNextImage field={settings.data.logo} />
           </PrismicNextLink>
         </div>
-        <nav className="self-start">
-          <ul className="flex flex-col">
-            {navigation.data?.links.map((item) => (
-              <li
-                key={prismic.asText(item.label)}
-                className="font-semibold tracking-tight text-slate-800"
-              >
-                <a href={item.link.url} className="text-sm font-light">
-                  <PrismicText field={item.label} />
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
+        <Nav navigation={navigation} />
         <Button
           linkField={homepage.data.contact_button[0].link}
           textField={homepage.data.contact_button[0].label}
