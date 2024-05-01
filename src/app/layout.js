@@ -50,7 +50,7 @@ export default async function RootLayout({ children }) {
     <html lang="en" className={neueHaasDisplay.className}>
       <body className="overflow-x-hidden antialiased bg-custom-gray-light">
         {/* <CustomParallaxProvider> */}
-        {/* <Splash /> */}
+        <Splash />
         <div className="container mx-auto">
           <RootHeader
             settings={settings}
