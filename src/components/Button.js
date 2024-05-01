@@ -8,12 +8,11 @@ export async function Button({
   labelClassName,
 }) {
   return (
-    <div
-      className={`py-4 px-8 rounded-full text-center uppercase custom-cursor shadow-sm ${className}`}
+    <PrismicNextLink
+      field={linkField}
+      className={`block rounded-full py-4 px-8  text-center uppercase custom-cursor shadow-sm ${className}`}
     >
-      <PrismicNextLink field={linkField} className="">
-        <Text field={textField} className={`${labelClassName} custom-cursor`} />
-      </PrismicNextLink>
-    </div>
+      <Text field={textField} className={`custom-cursor ${labelClassName}`} />
+    </PrismicNextLink>
   );
 }
