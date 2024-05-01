@@ -122,8 +122,10 @@ const Footer = async ({ slice }) => {
       </div>
 
       <footer className="px-4">
-        <PrismicNextImage field={slice.primary.footer_logo} alt="" />
-        <div className="flex mt-2 md:-mt-3 text-custom-gray-dark font-thin">
+        <div className="">
+          <PrismicNextImage field={slice.primary.footer_logo} alt="" />
+        </div>
+        <div className="flex mt-2 md:-mt-4 text-custom-gray-dark font-thin">
           <div className="mr-2">
             <PrismicNextImage field={slice.primary.copyright_logo} alt="" />
           </div>

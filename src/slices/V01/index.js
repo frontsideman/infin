@@ -4,7 +4,6 @@ import clsx from 'clsx';
 import { PrismicNextImage } from '@prismicio/next';
 import { Button } from '@/components/Button';
 import { Text } from '@/components/Text';
-import { Parallax } from 'react-scroll-parallax';
 
 /**
  * @typedef {import("@prismicio/client").Content.V01Slice} V01Slice
@@ -20,14 +19,6 @@ const V01 = ({ slice }) => {
   const isImageLeft = slice.variation === 'imageLeft';
 
   return (
-    // <Parallax
-    //   speed={10}
-    //   onProgressChange={(progress) => {
-    //     // console.log('---progress', progress);
-    //   }}
-    //   onEnter={() => console.log('---onEnter')}
-    //   onExit={() => console.log('onExit')}
-    // >
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
@@ -89,7 +80,6 @@ const V01 = ({ slice }) => {
         </div>
       </div>
     </section>
-    // </Parallax>
   );
 };
 

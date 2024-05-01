@@ -1,13 +1,12 @@
 import './globals.css';
 
-import { Hanken_Grotesk } from 'next/font/google';
-import { PrismicPreview } from '@prismicio/next';
-import { repositoryName } from '@/prismicio';
-import { RootHeader } from '@/components/RootHeader';
-import { createClient } from '@/prismicio';
-import { Splash } from '@/components/Splash';
 import localFont from 'next/font/local';
-import { CustomParallaxProvider } from '@/components/CustomParallaxProvider';
+import { Hanken_Grotesk } from 'next/font/google';
+import { repositoryName } from '@/prismicio';
+import { createClient } from '@/prismicio';
+import { RootHeader } from '@/components/RootHeader';
+import { PrismicPreview } from '@prismicio/next';
+import { Splash } from '@/components/Splash';
 
 const neueHaasDisplay = localFont({
   src: [
@@ -49,7 +48,6 @@ export default async function RootLayout({ children }) {
   return (
     <html lang="en" className={neueHaasDisplay.className}>
       <body className="overflow-x-hidden antialiased bg-custom-gray-light">
-        {/* <CustomParallaxProvider> */}
         <Splash />
         <div className="container mx-auto">
           <RootHeader
@@ -60,7 +58,6 @@ export default async function RootLayout({ children }) {
           {children}
         </div>
         <PrismicPreview repositoryName={repositoryName} />
-        {/* </CustomParallaxProvider> */}
       </body>
     </html>
   );

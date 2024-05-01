@@ -15,10 +15,11 @@ export function RootHeader({ settings, navigation, homepage }) {
   const logoVariants = {
     expand: {
       width: '300px',
+      transition: { type: 'linear', duration: 0.2 },
     },
     collapse: {
       width: '250px',
-      transition: { type: 'spring', delay: 0.2 },
+      transition: { type: 'linear', duration: 0.2 },
     },
   };
 
@@ -31,7 +32,7 @@ export function RootHeader({ settings, navigation, homepage }) {
         setIsRowMenu(false);
         controls.start('expand');
       }
-    }, 500);
+    }, 200);
     document.addEventListener('scroll', scrollHandler);
     return () => document.removeEventListener('scroll', scrollHandler);
   }, [controls]);
@@ -40,7 +41,6 @@ export function RootHeader({ settings, navigation, homepage }) {
     <Bounded
       as="header"
       yPadding="sm1-" // leave wrong value
-      // className="sticky top-0 z-10 bg-custom-gray-light pb-2 pt-8 md:-mx-1"
       className={clsx('sticky top-0 z-10 bg-custom-gray-light pb-2 md:-mx-1', {
         'pt-8': !isRowMenu,
         'pt-3': isRowMenu,
