@@ -5,9 +5,6 @@ import { useState, useEffect } from 'react';
 import throttle from 'lodash.throttle';
 import { PrismicText } from '@prismicio/react';
 import * as prismic from '@prismicio/client';
-// import Image from 'next/image';
-// import { PrismicNextLink, PrismicNextImage } from '@prismicio/next';
-// import { Button } from '@/components/Button';
 import { ButtonLink } from '@/components/ButtonLink';
 import { Bounded } from '@/components/Bounded';
 import { motion, useAnimationControls } from 'framer-motion';
@@ -43,7 +40,11 @@ export function RootHeader({ settings, navigation, homepage }) {
     <Bounded
       as="header"
       yPadding="sm1-" // leave wrong value
-      className="sticky top-0 z-10 bg-custom-gray-light pb-2 pt-8 md:-mx-1"
+      // className="sticky top-0 z-10 bg-custom-gray-light pb-2 pt-8 md:-mx-1"
+      className={clsx('sticky top-0 z-10 bg-custom-gray-light pb-2 md:-mx-1', {
+        'pt-8': !isRowMenu,
+        'pt-3': isRowMenu,
+      })}
     >
       <div className="flex flex-wrap items-start justify-between leading-none">
         <motion.div
@@ -56,6 +57,7 @@ export function RootHeader({ settings, navigation, homepage }) {
           exit="exit"
         >
           <a href="/" className="text-xl font-semibold tracking-tight">
+            {/* TODO: find solution */}
             <img src={settings.data.logo.url} alt={settings.data.logo.alt} />
           </a>
         </motion.div>
