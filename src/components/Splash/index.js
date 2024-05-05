@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './styles.css';
 
@@ -8,6 +8,7 @@ export const Splash = () => {
   const freezePage = ['overflow-hidden', 'fixed', 'w-screen', 'h-screen'];
   const [isShowing, setIsShowing] = useState(true);
 
+  // TODO: clean code
   // useEffect(() => {
   //   const timerCallback = () => {
   //     setIsShowing(false);
@@ -47,7 +48,6 @@ export const Splash = () => {
           document.querySelector('body').classList.remove(...freezePage);
         }}
       >
-        {/* <div className="absolute w-full h-full bg-slate-900 grid z-40"> */}
         <svg
           className="m-auto w-full md:w-auto px-4"
           width="735"
@@ -155,7 +155,6 @@ export const Splash = () => {
             />
           </g>
         </svg>
-        {/* </div> */}
       </motion.div>
     </AnimatePresence>
   );

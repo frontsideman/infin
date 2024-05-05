@@ -1,25 +1,25 @@
-'use client';
+"use client";
 
-import clsx from 'clsx';
-import { useState, useEffect } from 'react';
-import throttle from 'lodash.throttle';
-import { PrismicText } from '@prismicio/react';
-import * as prismic from '@prismicio/client';
-import { ButtonLink } from '@/components/ButtonLink';
-import { Bounded } from '@/components/Bounded';
-import { motion, useAnimationControls } from 'framer-motion';
+import clsx from "clsx";
+import { useState, useEffect } from "react";
+import throttle from "lodash.throttle";
+import { PrismicText } from "@prismicio/react";
+import * as prismic from "@prismicio/client";
+import { ButtonLink } from "@/components/ButtonLink";
+import { Bounded } from "@/components/Bounded";
+import { motion, useAnimationControls } from "framer-motion";
 
 export function RootHeader({ settings, navigation, homepage }) {
   const [isRowMenu, setIsRowMenu] = useState(false);
   const controls = useAnimationControls();
   const logoVariants = {
     expand: {
-      width: '300px',
-      transition: { type: 'linear', duration: 0.2 },
+      width: "30%",
+      transition: { type: "linear", duration: 0.6 },
     },
     collapse: {
-      width: '250px',
-      transition: { type: 'linear', duration: 0.2 },
+      width: "25%",
+      transition: { type: "linear", duration: 0.6 },
     },
   };
 
@@ -27,31 +27,32 @@ export function RootHeader({ settings, navigation, homepage }) {
     const scrollHandler = throttle(() => {
       if (window.scrollY > 0) {
         setIsRowMenu(true);
-        controls.start('collapse');
+        controls.start("collapse");
       } else {
         setIsRowMenu(false);
-        controls.start('expand');
+        controls.start("expand");
       }
     }, 200);
-    document.addEventListener('scroll', scrollHandler);
-    return () => document.removeEventListener('scroll', scrollHandler);
+    document.addEventListener("scroll", scrollHandler);
+    return () => document.removeEventListener("scroll", scrollHandler);
   }, [controls]);
 
   return (
     <Bounded
       as="header"
       yPadding="sm1-" // leave wrong value
-      className={clsx('sticky top-0 z-10 bg-custom-gray-light pb-2 md:-mx-1', {
-        'pt-8': !isRowMenu,
-        'pt-3': isRowMenu,
+      className={clsx("sticky top-0 z-10 bg-custom-gray-light pb-2 md:-mx-1", {
+        "pt-8": !isRowMenu,
+        "pt-3": isRowMenu,
       })}
     >
       <div className="flex flex-wrap items-start justify-between leading-none">
         <motion.div
-          className={clsx({
-            'w-1/3': !isRowMenu,
-            'w-1/5': isRowMenu,
-          })}
+          // className={clsx({
+          //   'w-1/3': !isRowMenu,
+          //   'w-1/5': isRowMenu,
+          // })}
+          initial="collapse"
           variants={logoVariants}
           animate={controls}
           exit="exit"
@@ -63,14 +64,14 @@ export function RootHeader({ settings, navigation, homepage }) {
         </motion.div>
         <nav
           className={clsx({
-            'self-start': !isRowMenu,
-            'self-center': isRowMenu,
+            "self-start": !isRowMenu,
+            "self-center": isRowMenu,
           })}
         >
           <ul
-            className={clsx('flex', {
-              'flex-col': !isRowMenu,
-              'flex-row gap-4': isRowMenu,
+            className={clsx("flex", {
+              "flex-col": !isRowMenu,
+              "flex-row gap-4": isRowMenu,
             })}
           >
             {navigation.data?.links.map((item) => (
@@ -88,7 +89,7 @@ export function RootHeader({ settings, navigation, homepage }) {
         <ButtonLink
           link={homepage.data.contact_button[0].link.url}
           text={homepage.data.contact_button[0].label[0].text}
-          className="border border-custom-gray-dark self-start"
+          className="self-start border border-custom-gray-dark"
         />
       </div>
     </Bounded>
