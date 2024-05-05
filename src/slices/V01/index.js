@@ -20,7 +20,6 @@ const V01 = ({ slice }) => {
 
   return (
     <section
-      ref={container}
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
       className={clsx(
